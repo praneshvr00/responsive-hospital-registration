@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"> </script> 
+
+
+<style>
+    .carousel-item {
+  height: 65vh;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+body,html{
+    width: 99%;
+    border: none;
+    padding-left: 15px;
+
+}
+p{
+    background-color: none;
+}
+hr {
+            position: relative;
+            top: 20px;
+            border: none;
+            height: 8px;
+            background: black;
+            margin-bottom: 50px;
+        }
+
+
+
+        .footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  
+  height: 300px;
+}
+
+
+@media (max-width: 34em) {
+    body {
+      margin-bottom: 500px;
+    }
+    .footer {
+      height: 300px;
+    }
+    
+}
+
+footer {
+  padding-top: 30px;
+  background-color: #292c2f;
+  color: #bbb;
+}
+
+footer a {
+  color: #999;
+  text-decoration:none;
+}
+
+footer a:hover, footer a:focus {
+  color: #aaa;
+  text-decoration:none;
+  border-bottom:1px dotted #999;
+}
+
+footer .form-control {
+    background-color: #1f2022;
+    box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+    border: none;
+    resize: none;
+    color: #d1d2d2;
+    padding: 0.7em 1em;
+}
+
+
+</style>
+    </head>
+<body>
+
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="#">WE ARE HERE !!</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html"> Go Home</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      
+      <header>
+      
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" style="background-image: url('sl1.jpg')">
+              <div class="carousel-caption">
+                <h5>24 HOURS</h5>
+                <p>Our organizations are available for 24 * 7.</p>
+              </div>
+            </div>
+            <div class="carousel-item" style="background-image: url('sl8.jpg')">
+              <div class="carousel-caption">
+                <h5>DONT WORRY</h5>
+                <p>Our team monitoring everyday to help the needy one.</p>
+              </div>
+            </div>
+            <div class="carousel-item" style="background-image: url('sl3.jpg')">
+              <div class="carousel-caption">
+                <h5>FREE SERVICE</h5>
+                <p>Ambulance service is free for emergency purpose !.</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </header>
+      
+      <br><br><br><br>
+      <form> 
+<cente//r> 
+      <h1 style="text-align: center;">Contact us Here !!</h1>
+      <br><br><br>
+
+      <div class="row">
+          <div class="col-md-2"> <h3>NAME</h3>
+      </div>
+      <div class="col-md-3"><input type="text" name="fname" placeholder="full name"pattern="[A-Za-z]*" required></div>
+      <div class="col-md-4"><h3>HOSPITAL NAME</h3>
+      </div>
+      <div class="col-md-3"><input type="text" name="hosname" placeholder="hospital name"pattern="[A-Za-z]*" required></div>
+
+      </div>
+      <br><br>
+      <div class="row">
+          <div class="col-md-2"><h3>AGE</h3></div>
+          <div class="col-md-3"><input  type="number" name="age" min="5" max="80"  required></div>
+          <div class="col-md-4"><h3>DISTRICT</h3></div>
+          <div class="col-md-3"><input type="text" name="district" placeholder="user's district"pattern="[A-Za-z]*" required></div>
+      </div>
+      <br><br><br>
+      <div class="row">
+          <div class="col-md-2"><h3>CITY</h3></div>
+          <div class="col-md-3"><input type="text" name="city" placeholder="user's city"pattern="[A-Za-z]*" required></div>
+          <div class="col-md-4"><h3>REASON</h3></div>
+          <div class="col-md-3"><textarea name="address" rows="5" cols="30" required> </textarea></div>
+
+      </div>
+     <br><br><br>
+    </cente//r>
+<div class="row">
+
+<div class="col-md-12"> 
+      <div class="container">
+
+         <center>   <input type="submit" value="Register"> </center>
+        </div>
+      </div>
+    </div>
+</form>
+
+<br><br>
+<div class="mi"> 
+<hr size="5" width="97%" color="black"><div class="row"><br><br>
+     <div class="col-md-7 col-sm-12"><img src="breathe.jfif" class="rounded-circle" alt="Cinque Terre" width="304" height="236"> </div>
+     <div class="col-md-4 col-sm-6"> <p style="text-align: center;padding-top: 7vh;padding-bottom: 7vh;color: solid black;font-family: 'Courier New', monospace;"> stay were you are ! <br><br> where ever you go wear a mask !! <br><br> lead a healthier and haappy life !!!</p></div>
+
+   
+
+</div>
+<br><br>
+<hr size="5" width="97%" color="black"><div class="row"><br><br>
+
+    <div class="col-md-7 col-sm-12"><img src="berry.jfif" class="rounded-circle" alt="Cinque Terre" width="304" height="236"> </div>
+    <div class="col-md-4 col-sm-6"> <p style="text-align: center;padding-top: 7vh;padding-bottom: 7vh;color: solid black;font-family: 'Courier New', monospace;"> Sleep at Correct time ! <br><br> Take a Healthier Food!! <br><br> Family Is Everything !!!</p></div>
+
+</div>
+<br><br>
+<hr size="5" width="97%" color="black"><div class="row"><br><br>
+
+    <div class="col-md-7 col-sm-12"><img src="cup.jfif" class="rounded-circle" alt="Cinque Terre" width="304" height="236"> </div>
+    <div class="col-md-4 col-sm-6"> <p style="text-align: center;padding-top: 7vh;padding-bottom: 7vh;color: solid black;font-family: 'Courier New', monospace;"> Positive Mind is Everything ! <br><br> Meditation Matters!! <br><br> Long Live !!!</p></div>
+    </div>
+</div>
+    <hr size="5" width="97%" color="black"><div class="row"><br><br>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <h5><i class="fa fa-road"></i> Hospital Regis INC..</h5><br><br>
+                    <div class="row">
+                        <div class="col-6">
+                            <ul class="list-unstyled">
+                                <li><a href="">Product</a></li><br>
+                                <li><a href="">Benefits</a></li><br>
+                                <li><a href="">Partners</a></li><br>
+                                <li><a href="">Team</a></li><br>
+                            </ul>
+                        </div>
+                        <div class="col-6">
+                            <ul class="list-unstyled">
+                                <li><a href="">Documentation</a></li><br>
+                                <li><a href="">Support</a></li><br>
+                                <li><a href="">Legal Terms</a></li><br>
+                                <li><a href="">About</a></li><br>
+                            </ul>
+                        </div>
+                    </div>
+                    <ul class="nav">
+                        <li class="nav-item"><a href="" class="nav-link pl-0"><i class="fa fa-facebook fa-lg"></i></a></li>
+                        <li class="nav-item"><a href="" class="nav-link"><i class="fa fa-twitter fa-lg"></i></a></li>
+                        <li class="nav-item"><a href="" class="nav-link"><i class="fa fa-github fa-lg"></i></a></li>
+                        <li class="nav-item"><a href="" class="nav-link"><i class="fa fa-instagram fa-lg"></i></a></li>
+                    </ul>
+                    <br>
+                </div>
+                
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
