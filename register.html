@@ -157,7 +157,7 @@ padding-top: 10px;
     reg{
 
         top: 10px;
-        left:16px;
+        left:50vh;
     }
     
     profile{
@@ -287,7 +287,33 @@ body::-webkit-scrollbar{
 }
 }
 
-        </style>
+tr{
+    padding: 10px;
+}
+td{
+    padding: 20px;
+}
+.tab{
+    padding-left: 40vh;
+}
+.lar tr,th{
+    font-size: larger;
+    padding-left: 10vh;
+}
+@media (max-width:73em){
+    .midd{
+        display: none;
+    }
+}
+.loww{
+    display: none;
+}
+@media(max-width:73em){
+    .loww{
+        display: block;
+    }
+}
+     </style>
     </head>
 
     <body style="background-color:white">
@@ -323,7 +349,7 @@ body::-webkit-scrollbar{
                   <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">OTHERS<span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                      <li><a href="#">PHARMACEUTICAL SUPPLIES</a></li>
+                      <li><a href="pharmacy.html">PHARMACEUTICAL SUPPLIES</a></li>
                       <li><a href="#">FAQ'S</a></li>
                       <li><a href="#">FEEDBACK</a></li>
                     </ul>
@@ -332,150 +358,239 @@ body::-webkit-scrollbar{
                 </ul>
             
                 <ul class="nav navbar-nav navbar-right">
-                  <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-                  <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                  <li><a href="sign.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                  <li><a href="sign.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
                 </ul>
               </div>
             </div>
           </nav>
        
-          <fieldset>
+          <fieldset class="bootstrap-overrides-fieldset">
         </div>
             <br><br>
             <div class="headone"> 
+                
                 <reg> 
-                    <div class="reg">  <img src="regnow1.png"width="100" ALIGN="left"height="100px"width="100%"> </div>
-                 </reg>
-                <h1 style="color:#07062d;"> CHOOSE YOUR HOSPITAL!! </h1>
+                    <div class="reg" style="padding-left: 6vh;">  <img src="regnow1.png"width="100" ALIGN="left"height="100px"width="100%"> </div>
+                </reg>
+                 <h1 style="color:#07062d;"> CHOOSE YOUR HOSPITAL!! </h1>
             </div>
-            <br>
-            <div >
-      
-
-       
-        
-            </div>
+            <br> <br><br><br>
             
-          <br><br><br><br><br>
-          <fieldset class=".bootstrap-overrides-fieldset"> 
-          <form>
-            <para>FULL NAME     
-            </para>
-               &emsp;&emsp;&emsp; <input type="text" name="fullname" placeholder="e.g:pranesh v r" pattern="[A-Za-z]*" autofocus required>
-            <i style="color: red;font-size: 10pt;">&emsp;
-               <div class="help"> <br> </div> note : &nbsp;full name with initials at last (dont include numbers)
-            </i><br><br><br><br>
-            <para>AGE               </para>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &emsp;  <input type="number" name="age" min="5" max="80"  required><br><br>
-            <br><br><para>CITY</para>
-            &emsp;&emsp;&emsp; &emsp;&emsp;&emsp;  <input type="text" name="city" placeholder="current city" pattern="[a-zA-Z]*"  required>
-            <i style="color: red;font-size: 10pt;">&emsp;
-                <div class="help"> <br> </div>  note : &nbsp;your current city
-            </i><br><br><br><br>
-            <para>DISTRICT</para>
-            &emsp;&emsp;&emsp; &emsp; <input type="text" name="district" placeholder="current district" pattern="[a-zA-Z]*" required>
-            <i style="color: red;font-size: 10pt;">&emsp;
-                <div class="help"> <br> </div> note : &nbsp;your current district
-            </i><br><br><br><br><br><br><br><br>
+
+          <div class="row">
+
+            <div class="col-md-5">
+              <table class="tab">
+                  <tr>
+                      <td>FULL NAME   </td>
+                      <td> <input type="text" name="fullname" placeholder="e.g:pranesh v r" pattern="[A-Za-z]*" autofocus required></td>
+                  </tr>
+                  <tr>
+                      <td></td>
+                      <td><i style="color: red;font-size: 10pt;">
+                        <div class="help"> <br> </div> note : &nbsp;full name with initials at last (dont include numbers)
+                     </i></td>
+                  </tr>
+                  <tr>
+                      <td>AGE  </td>
+                      <td> <input type="number" name="age" min="5" max="80"  required></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                 </tr>
+                  <tr>
+                      <td>CITY </td>
+                      <td><input type="text" name="city" placeholder="current city" pattern="[a-zA-Z]*"  required></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td><i style="color: red;font-size: 10pt;">
+                        <div class="help"> <br> </div>  note : your current city
+                    </i></td>
+                 </tr>
+                  <tr>
+                      <td>DISTRICT</td>
+                      <td> <input type="text" name="district" placeholder="current district" pattern="[a-zA-Z]*" required></td>
+                  </tr>
+                  <tr>
+                      <td></td>
+                      <td><i style="color: red;font-size: 10pt;">
+                        <div class="help"> <br> </div> note : your current district
+                    </i></td>
+                  </tr>
+                  <tr>
+                    <td>GENDER</td>
+                    <td><input type="radio" name="gender" value="MALE" checked>MALE
+                        <input type="radio" name="gender" value=FEMALE>FEMALE
+                        <input type="radio" name="gender" value=OTHER>OTHER</td>
+                </tr>
+              </table>
             </div>
-        </fieldset>
-            <fieldset class=".bootstrap-overrides-fieldset"> 
+           <div class="midd"> 
+            <div class="col-md-3">
                 
-                  <div class="midpage"> 
-                <legend style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">HOSPITAL DETAILS</legend>
-                
-            <para style="position:absolute">CHOOSE HOSPITAL</para>
-            &emsp;&emsp;&emsp; &emsp;
-            &emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp; &emsp;
-            <div class="wrapper">
-        
-            <select name="hospital" onfocus='this.size=5' onblur='this.size=1;' onchange='this.size=1; this.blur();'required >
-                <option value="none" selected>choose</option>
-                <option value="gvt.hospital,arialur" >gvt.hospital,arialur</option>
-                <option value="gvt.hospital,bhavani">gvt.hospital,bhavani</option>
-                <option value="pgvt.hospital,cuddalore">gvt.hospital,cuddalore</option>
-                <option value="gvt.hospital,dindigul">gvt.hospital,dindigul</option>
-                <option value="gvt.hospital,erode">gvt.hospital,erode</option>
-                <option value="gvt.hospital,gobi">gvt.hospital,gobi</option>
-                <option value="gvt.hospital,hosur">gvt.hospital,hosur</option>
-                <option value="gvt.hospital,imbur">gvt.hospital,imbur</option>
-                <option value="gvt.hospital,jodambu">gvt.hospital,jodambur</option>
-                <option value="gvt.hospital,kodaikanal">gvt.hospital,kodaikanal</option>
-                <option value="gvt.hospital,lukyankotai">gvt.hospital,lukyankotai</option>
-                <option value="gvt.hospital,madurai">gvt.hospital,madurai</option>
-                <option value="gvt.hospital,natham">gvt.hospital,natham</option>
-                <option value="gvt.hospital,oddanchatram">gvt.hospital,oddanchatram</option>
-                <option value="gvt.hospital,perambalur">gvt.hospital,perambalur</option>
-                <option value="gvt.hospital,salem">gvt.hospital,salem</option>
-                <option value="gvt.hospital,tiruchy">gvt.hospital,tiruchy</option>
-                <option value="gvt.hospital,vanampaakam">gvt.hospital,vanampaakam</option>
-            </select><br><br><br><br>
-        </div>
-        <para style="position:absolute;">HOSPITAL LOCATION</para>
-        &emsp;&emsp;&emsp; &emsp;
-        &emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp; &emsp;
-        <div class="wrapper">
-            <select name="hospitallocation" onfocus='this.size=5' onblur='this.size=1;' onchange='this.size=1; this.blur();'required >
-                <option value="none" selected>choose</option>
-                <option value="arialur" >arialut</option>
-                <option value="bhavani">bhavani</option>
-                <option value="cuddalore">cuddalore</option>
-                <option value="dindigul">dindigul</option>
-                <option value="erode">erode</option>
-                <option value="gobi">,gobi</option>
-                <option value="hosur">,hosur</option>
-                <option value=",imbur">,imbur</option>
-                <option value="jodambu">jodambur</option>
-                <option value="kodaikanal">kodaikanal</option>
-                <option value="lukyankotai">lukyankotai</option>
-                <option value="madurai">madurai</option>
-                <option value="natham">natham</option>
-                <option value="oddanchatram">oddanchatram</option>
-                <option value="perambalur">perambalur</option>
-                <option value="salem">salem</option>
-                <option value="tiruchy">tiruchy</option>
-                <option value="vanampaakam">vanampaakam</option>
-            </select><br><br><br><br>
-        
-        
-        
-        
-        </div>
-        <para style="position:absolute;text-transform: uppercase;">suffering disease</para>
-            &emsp;&emsp;&emsp; &emsp;
-            &emsp;&emsp; &emsp;&emsp; &emsp;&emsp;&emsp;&emsp; &emsp;
-        <input type="text" name="disease" placeholder="cold/cough" required><br><br><br><br>
-        <para style="position:absolute;text-transform: uppercase;">visiting time</para>
-            &emsp;&emsp;&emsp; &emsp;
-            &emsp;&emsp; &emsp;&emsp; &emsp;&emsp;&emsp;&emsp; &emsp;
-        <input type="time" name="time" min="09:00" max="19:00" value="09:00"  required><i style="color: red;font-size: 10pt;">&emsp;
-            <div class="help"> <br> </div>note : &nbsp;select time between 9.00am-7.00pm  <div class="help2"> <br> ## if emergency contact us!!</i>
-        </fieldset>
-           
-           
-           
-           
-           
-           
-            <br><br><br><br>
-            <para>PROFILE PHOTO </para>&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;&emsp; <br><br><input type="file" name="profilepicture" required>
-           <i style="color: red;font-size: 10pt;"> 
-              <br><br>&emsp; &emsp;&emsp;<div class="help"> <br> </div>note: upload your passport size photo in pdf format
-            </i>
-            <br><br><br>
-            <center> 
-            <input type="submit" value="Register"> <input type="reset" value="RESET" onclick="window.location.reload()">
-        </center>
-        <br>
-        <div class="help"> <br></div>  <p style="color: red;text-align: center;"> <i> note:please double check before submit.</i></p><br><br><br>
-        <center> 
-        <a href="hosp1.html"><back> back</back></a>
-        </center>   
+                 
+                 <table class="tab" >
+                     <tr style="padding-top: 100vh;">
+                         <td>PROFILE PHOTO </td>
+                         <td><input type="file" name="profilepicture" required></td>
+                     </tr>
+                     <tr>
+                         <td></td>
+                         <td><i style="color: red;font-size: 10pt;"> 
+                            note: upload your passport size <br> photo in pdf format
+                          </i></td>
+                     </tr>
+                     <tr>
+                         <td></td>
+                     </tr>
+                     <tr>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td> </td>
+                    </tr>
+                    <tr>
+                        <td> </td>
+                    </tr>
+                    <tr>
+                        <td><input type="submit" value="Register"></td>
+                        <td><a class="btn btn-danger btn-lg" style="display: inline;" href="index.html" role="button">back</a></td>
+                        <td></td> 
+                    </tr>
+                   <tr>
+                       <td>
+                        <input type="reset" value="RESET" onclick="window.location.reload()">
+                       </td>
+                   </tr>
+
+                 </table>
+            
+            </div>
+         </div>
+            <div class="col-md-4"> 
+              <table class="tab">
+                  <tr>
+                      <td>CHOOSE HOSPITAL</td>
+                      <td><select name="hospital" onfocus='this.size=5' onblur='this.size=1;' onchange='this.size=1; this.blur();'required >
+                        <option value="none" selected>choose</option>
+                        <option value="gvt.hospital,arialur" >gvt.hospital,arialur</option>
+                        <option value="gvt.hospital,bhavani">gvt.hospital,bhavani</option>
+                        <option value="pgvt.hospital,cuddalore">gvt.hospital,cuddalore</option>
+                        <option value="gvt.hospital,dindigul">gvt.hospital,dindigul</option>
+                        <option value="gvt.hospital,erode">gvt.hospital,erode</option>
+                        <option value="gvt.hospital,gobi">gvt.hospital,gobi</option>
+                        <option value="gvt.hospital,hosur">gvt.hospital,hosur</option>
+                        <option value="gvt.hospital,imbur">gvt.hospital,imbur</option>
+                        <option value="gvt.hospital,jodambu">gvt.hospital,jodambur</option>
+                        <option value="gvt.hospital,kodaikanal">gvt.hospital,kodaikanal</option>
+                        <option value="gvt.hospital,lukyankotai">gvt.hospital,lukyankotai</option>
+                        <option value="gvt.hospital,madurai">gvt.hospital,madurai</option>
+                        <option value="gvt.hospital,natham">gvt.hospital,natham</option>
+                        <option value="gvt.hospital,oddanchatram">gvt.hospital,oddanchatram</option>
+                        <option value="gvt.hospital,perambalur">gvt.hospital,perambalur</option>
+                        <option value="gvt.hospital,salem">gvt.hospital,salem</option>
+                        <option value="gvt.hospital,tiruchy">gvt.hospital,tiruchy</option>
+                        <option value="gvt.hospital,vanampaakam">gvt.hospital,vanampaakam</option>
+                    </select></td>
+                  </tr>
+                  <tr>
+                      <td></td>
+                      <td></td>
+                  </tr>
+                  <tr>
+                      <td>HOSPITAL LOCATION </td>
+                      <td><input type="text" name="pincode" placeholder="enter a valid one" pattern="[0-9]{6}" max="6" maxlength="6"required></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                  <tr>
+                      
+                      <td>ADDRESS</td>
+                      <td> <select name="hospitallocation" onfocus='this.size=5' onblur='this.size=1;' onchange='this.size=1; this.blur();'required >
+                        <option value="none" selected>choose</option>
+                        <option value="arialur" >arialut</option>
+                        <option value="bhavani">bhavani</option>
+                        <option value="cuddalore">cuddalore</option>
+                        <option value="dindigul">dindigul</option>
+                        <option value="erode">erode</option>
+                        <option value="gobi">,gobi</option>
+                        <option value="hosur">,hosur</option>
+                        <option value=",imbur">,imbur</option>
+                        <option value="jodambu">jodambur</option>
+                        <option value="kodaikanal">kodaikanal</option>
+                        <option value="lukyankotai">lukyankotai</option>
+                        <option value="madurai">madurai</option>
+                        <option value="natham">natham</option>
+                        <option value="oddanchatram">oddanchatram</option>
+                        <option value="perambalur">perambalur</option>
+                        <option value="salem">salem</option>
+                        <option value="tiruchy">tiruchy</option>
+                        <option value="vanampaakam">vanampaakam</option>
+                    </select></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                  <tr>
+                      <td>suffering disease</td>
+                      <td><input type="text" name="disease" placeholder="cold/cough" required></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                  <tr>
+                      <td>visiting time</td>
+                      <td><input type="time" name="time" min="09:00" max="19:00" value="09:00"  required></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td><i style="color: red;font-size: 10pt;">
+                        <div class="help"> <br> </div>note : select time between 9.00am-7.00pm  <br>## if emergency contact us!!##</i></td>
+                </tr>
+                  
+                 
+              </table>
+            </div>
+          </div>
+
+
+
+          <!----------------------------------------------------------------------------->
+          <!-----------------------------------------------------------------------------> 
+<div class="loww">
+    <br><br><br>
+   <center> <para>PROFILE PHOTO </para>&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;&emsp; <br><br><input type="file" name="profilepicture" required></center>
+    <i style="color: red;font-size: 10pt;"> 
+       <br><br>&emsp; &emsp;&emsp;<div class="help"> <br> </div>note: upload your passport size photo in pdf format
+     </i>
+     <br><br><br>
+     <center> 
+     <input type="submit" value="Register"> <input type="reset" value="RESET" onclick="window.location.reload()">
+ </center>
+ <br>
+ <div class="help"> <br></div>  <p style="color: red;text-align: center;"> <i> note:please double check before submit.</i></p><br><br><br>
+ <center> 
+    <a class="btn btn-danger btn-lg" style="display: inline;" href="index.html" role="button">back</a>
+ </center>  <br><br> 
+</div>
+
         </fieldset>
        
 
 </div>
 </form>
-       <br><br>
     </body>
 </html>
