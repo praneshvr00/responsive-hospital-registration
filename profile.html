@@ -177,12 +177,7 @@ header{
         text-align: center;
         
     }
-    input{
-        text-align: center;
-       display: inline;
-       display:table;
-        margin: auto;
-    }
+    
     input[type=radio]{
         text-align: unset;
         display: unset;
@@ -195,10 +190,7 @@ header{
         margin:0 auto;
 
     }
-    textarea{
-        display:table;
-        margin:0 auto;
-    }
+    
     .topnav{
         text-align: center;
         color: black;
@@ -251,12 +243,32 @@ input[type=submit]:hover{
      font: large;
      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-.fullpage{
-    padding-left: 50px;
-}
+
 @media (max-width: 78em) {
     .lg{
         display: none;
+    }
+    
+}  
+tr{
+    padding: 10px;
+}
+td{
+    padding: 20px;
+}
+.tab{
+    padding-left: 40vh;
+}
+.lar tr,th{
+    font-size: larger;
+    padding-left: 10vh;
+}
+@media (max-width: 68em) {
+    .lar{
+        display: none;
+    }
+    body,html{
+        width: 97%;
     }
     
 }  
@@ -296,7 +308,7 @@ input[type=submit]:hover{
                   <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">OTHERS<span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                      <li><a href="#">PHARMACEUTICAL SUPPLIES</a></li>
+                      <li><a href="pharmacy.html">PHARMACEUTICAL SUPPLIES</a></li>
                       <li><a href="#">FAQ'S</a></li>
                       <li><a href="#">FEEDBACK</a></li>
                     </ul>
@@ -305,8 +317,8 @@ input[type=submit]:hover{
                 </ul>
             
                 <ul class="nav navbar-nav navbar-right">
-                  <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-                  <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                  <li><a href="sign.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                  <li><a href="sign.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
                 </ul>
               </div>
             </div>
@@ -318,65 +330,114 @@ input[type=submit]:hover{
         <div class="fullpage">
 
       
-        <div class="headone"> 
         
-            <h1 style="color:#07062d"> Fill The Details </h1>
-        </div>
         <br><br><br><br>
-    <para>FIRST NAME        </para>
-    <input type="text" name="fname" placeholder="full name"pattern="[A-Za-z]*" autofocus required><br><br>
-    <para>LAST NAME         </para>
-    <input type="text" name="lname"  placeholder="initials" pattern="[A-Za-z]*"required><br><br>
-    <para>AGE               </para>
-    <input type="number" name="age" min="5" max="80"  required><br><br>
-    
-    <para>D-O-B</para>
-    <input type="date" name="birthdate" value="2000-01-01"><br><br>
-    <para>CITY</para>
-    <input type="text" name="city" placeholder="current city"pattern="[a-zA-Z]*" required><br><br>
-    <para>DISTRICT</para>
-    <select name="state" required>
-        <option value="none" selected>none</option>
-        <option value="kerala">KERALA</option>
-        <option value="pondicherry">PONDICHERRY</option>
-        <option value="tamilnadu">TAMILNADU</option>
-    </select><br><br>
-    <para>ADDRESS </para>
-    <textarea name="address" rows="5" cols="30" required>
+<div class="row">
 
-    </textarea><br><br>
-    <para>PINCODE      </para>
-    <input type="text" name="pincode" placeholder="enter a valid one" pattern="[0-9]{6}" max="6" maxlength="6"required><br><br>
-    <para>MOBILE NO(10 digit with country code)  </para>
-    <input type="tel" name="phone" value="+91" pattern="+[0-9]{10}"maxlength="13" required><br><br>
-    <para>AADHAR NO</para>
-    <input type="text" name="aadharno" placeholder="0000-0000-0000"pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}"required><br><br>
-    <para>EMAIL-ID</para>
-    <input type="email" name="email"placeholder="xyz@gmail.com" required><br><br>
-    <para>GENDER</para><BR>
-<CENTER > 
-    <input type="radio" name="gender" value="MALE" checked>
-    MALE&emsp; 
-    <input type="radio" name="gender" value=FEMALE>
-   FEMALE &emsp;
-    <input type="radio" name="gender" value=OTHER>
-   OTHER 
-   
-</CENTER> 
+  <div class="col-md-5">
+    <table class="tab">
+        <tr>
+            <td>FIRST NAME  </td>
+            <td> <input type="text" name="fname" placeholder="full name"pattern="[A-Za-z]*" autofocus required></td>
+        </tr>
+        <tr>
+            <td>LAST NAME  </td>
+            <td> <input type="text" name="lname"  placeholder="initials" pattern="[A-Za-z]*"required></td>
+        </tr>
+        <tr>
+            <td>AGE </td>
+            <td><input type="number" name="age" min="5" max="80"  required></td>
+        </tr>
+        <tr>
+            <td>D-O-B</td>
+            <td> <input type="date" name="birthdate" value="2000-01-01"></td>
+        </tr>
+        <tr>
+            <td>CITY</td>
+            <td><input type="text" name="city" placeholder="current city"pattern="[a-zA-Z]*" required></td>
+        </tr>
+        <tr>
+            <td>DISTRICT</td>
+            <td>
+                <select name="state" required>
+                <option value="none" selected>none</option>
+                <option value="kerala">KERALA</option>
+                <option value="pondicherry">PONDICHERRY</option>
+                <option value="tamilnadu">TAMILNADU</option>
+                </select>
+            </td>
+        </tr>
+    </table>
+  </div>
+  <div class="col-md-3">
+
+ 
+  <table class="lar">
+      <tr><th>F</th> </tr>
+      
+      <tr><th><br></th></tr>
+      <tr><th><br></th></tr>
+      
+      <tr> <th>I</th></tr>
+      
+      <tr><th><br></th></tr>
+      <tr><th><br></th></tr>
+      
+      <tr><th>L</th> </tr>
+      
+      <tr><th><br></th></tr>
+      <tr><th><br></th></tr>
+     
+      <tr> <th>L</th></tr>
+     
+     
+  </table>
+  </div>
+  <div class="col-md-4"> 
+    <table class="tab">
+        <tr>
+            <td>MOBILE NO</td>
+            <td><input type="tel" name="phone" value="+91" pattern="+[0-9]{10}"maxlength="13" required></td>
+        </tr>
+        <tr>
+            <td>PINCODE </td>
+            <td><input type="text" name="pincode" placeholder="enter a valid one" pattern="[0-9]{6}" max="6" maxlength="6"required></td>
+        </tr>
+        <tr>
+            
+            <td>ADDRESS</td>
+            <td> <textarea name="address" rows="5" cols="30" required></textarea></td>
+        </tr>
+        <tr>
+            <td>AADHAR NO</td>
+            <td><input type="text" name="aadharno" placeholder="0000-0000-0000"pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}"required></td>
+        </tr>
+        <tr>
+            <td>EMAIL-ID</td>
+            <td><input type="email" name="email"placeholder="xyz@gmail.com" required></td>
+        </tr>
+        <tr>
+            <td>GENDER</td>
+            <td><input type="radio" name="gender" value="MALE" checked>MALE
+                <input type="radio" name="gender" value=FEMALE>FEMALE
+                <input type="radio" name="gender" value=OTHER>OTHER</td>
+        </tr>
+    </table>
+  </div>
+</div>
 <BR><BR><BR>
 
 
 
 
-    <input type="submit" value="submit"> 
+   <center>  <input type="submit" style="text-align: center;" value="submit"> <div class="back" style="display: inline;padding-left: 3vh;"> 
+    <a href="index.html" ><back> back</back></a>
+    </div> </center>
+</form>
     <br>
    <p style="color: red;text-align: center;"> <i>  note:please double check before submit.</i></p><br><br><br>
 </dic>
-<center> 
-<div class="back"> 
-<a href="index.html"><back> back</back></a>
-</div>
-</center>   
+   
 
 
 
@@ -385,7 +446,7 @@ input[type=submit]:hover{
        
 </form>
 
-       <br><br>
+    
     </div>
     </body>
 </html>
